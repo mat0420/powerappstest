@@ -1,0 +1,100 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr1f0_tbl_apl01s",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr1f0_tbl_apl01",
+    "MaxGetRowsCount": 500,
+    "Name": "TBL_APL01",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "所有者",
+      "cr1f0_address1_city": "住所１：市区町村",
+      "cr1f0_emailaddress1": "電子メール",
+      "cr1f0_name": "取引先企業名",
+      "cr1f0_tbl_apl01_AsyncOperations": "システム ジョブ ",
+      "cr1f0_tbl_apl01_BulkDeleteFailures": "一括削除の失敗 ",
+      "cr1f0_tbl_apl01_DuplicateBaseRecord": "レコードの重複  (cr1f0_tbl_apl01_DuplicateBaseRecord)",
+      "cr1f0_tbl_apl01_DuplicateMatchingRecord": "レコードの重複  (cr1f0_tbl_apl01_DuplicateMatchingRecord)",
+      "cr1f0_tbl_apl01_MailboxTrackingFolders": "メールボックス自動追跡フォルダー",
+      "cr1f0_tbl_apl01_PrincipalObjectAttributeAccesses": "フィールド共有 ",
+      "cr1f0_tbl_apl01_ProcessSession": "プロセス セッション",
+      "cr1f0_tbl_apl01_SyncErrors": "同期エラー",
+      "cr1f0_tbl_apl01id": "TBL_APL01",
+      "cr1f0_telephone1": "代表電話",
+      "createdby": "作成者",
+      "createdon": "作成日",
+      "createdonbehalfby": "作成者 (代理)",
+      "importsequencenumber": "インポート シーケンス番号",
+      "modifiedby": "修正者",
+      "modifiedon": "修正日",
+      "modifiedonbehalfby": "修正者 (代理)",
+      "overriddencreatedon": "レコード作成日",
+      "owningbusinessunit": "所属部署",
+      "owningteam": "所有チーム",
+      "owninguser": "所有ユーザー",
+      "statecode": "状態",
+      "statuscode": "ステータス",
+      "timezoneruleversionnumber": "タイム ゾーン規則のバージョン番号",
+      "utcconversiontimezonecode": "UTC 変換タイム ゾーン コード",
+      "versionnumber": "バージョン番号"
+    },
+    "PreferredName": "TBL_APL01",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "TBL_APL01 (ビュー)",
+    "Name": "_cr1f0_tbl_apl01_views",
+    "RelatedEntityName": "TBL_APL01",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "4521e170-08ab-44d7-a6e5-242570e0f953": "TBL_APL01の高度な検索ビュー",
+      "6ae73e6f-dd88-45b0-a47a-1e1ecf6d2ca4": "非アクティブなTBL_APL01",
+      "9ef73cbd-4230-4a8f-8d33-c4e9e674505d": "TBL_APL01関連ビュー",
+      "e3e294bd-08bc-4aa0-bb1b-6915f486c46c": "TBL_APL01検索ダイアログ ビュー",
+      "eaedf53e-ba3b-40f8-982d-3a4d224abae8": "アクティブなTBL_APL01"
+    }
+  },
+  {
+    "DisplayName": "状態 (TBL_APL01)",
+    "Name": "cr1f0_tbl_apl01_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "アクティブ",
+      "1": "非アクティブ"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "TBL_APL01"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "TBL_APL01",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "ステータス (TBL_APL01)",
+    "Name": "cr1f0_tbl_apl01_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "アクティブ",
+      "2": "非アクティブ"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "TBL_APL01"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "TBL_APL01",
+    "Type": "OptionSetInfo"
+  }
+]

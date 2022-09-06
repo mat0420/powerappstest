@@ -1,0 +1,75 @@
+"Screen3 As screen.'phoneLayout_Success_ver3.0'":
+    OnVisible: =Reset(TextInput1)
+
+    iconCircle1 As circle.Circle:
+        X: =Parent.Width/2 - Self.Width/2
+        Y: =(Parent.Height/2 - Self.Height/2) * .7
+        ZIndex: =1
+
+    iconCheck1 As icon.Check:
+        Height: =iconCircle1.Height
+        Icon: =Icon.Check
+        PaddingBottom: =Self.PaddingTop
+        PaddingLeft: =Self.PaddingTop
+        PaddingRight: =Self.PaddingTop
+        PaddingTop: =18
+        Width: =iconCircle1.Width
+        X: =Parent.Width/2 - Self.Width/2
+        Y: =(Parent.Height/2 - Self.Height/2) * .7
+        ZIndex: =2
+
+    LblSuccessMsg1 As label:
+        Align: =Align.Center
+        AutoHeight: =true
+        Height: =iconCircle1.Height
+        Size: =21
+        Text: ="アカウントが正常に作成されました！"
+        Width: =514
+        X: =45
+        Y: =iconCheck1.Y + iconCheck1.Height + 100
+        ZIndex: =3
+
+    Label2 As label:
+        Height: =70
+        Size: =21
+        Text: ="お客様にウェルカムメモを送信しますか？"
+        Width: =560
+        X: =45
+        Y: =630
+        ZIndex: =4
+
+    TextInput1 As text:
+        Default: ="アカウントを作成してただきありがとうございます。ご利用お待ちしております！"
+        Height: =190
+        Mode: =TextMode.MultiLine
+        Size: =21
+        Width: =560
+        X: =45
+        Y: =720
+        ZIndex: =5
+
+    Button1 As button:
+        Height: =70
+        OnSelect: |-
+            =sample_flow01.Run(
+                EditForm1.LastSubmit.電子メール,
+                TextInput1.Text
+            );
+            Navigate(Screen1);
+        Size: =24
+        Text: ="はい"
+        Width: =260
+        X: =45
+        Y: =1002
+        ZIndex: =6
+
+    Button2 As button:
+        Height: =70
+        OnSelect: =Navigate(Screen1)
+        Size: =24
+        Text: ="いいえ"
+        Width: =260
+        X: =345
+        Y: =1002
+        ZIndex: =7
+
