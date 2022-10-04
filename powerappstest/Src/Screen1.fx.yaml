@@ -84,7 +84,7 @@ Screen1 As screen:
     Button3 As button:
         Height: =70
         Size: =24
-        Text: ="ボタン"
+        Text: ="ABCボタン"
         Width: =280
         X: =123
         Y: =489
