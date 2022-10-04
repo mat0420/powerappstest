@@ -95,7 +95,7 @@ Screen1 As screen:
         Size: =24
         Text: ="ボタン2"
         Width: =280
-        X: =154
-        Y: =322
+        X: =360
+        Y: =1063
         ZIndex: =5
 
