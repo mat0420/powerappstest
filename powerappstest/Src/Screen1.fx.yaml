@@ -81,3 +81,12 @@ Screen1 As screen:
         Y: =10
         ZIndex: =3
 
+    Button3 As button:
+        Height: =70
+        Size: =24
+        Text: ="ボタン"
+        Width: =280
+        X: =123
+        Y: =489
+        ZIndex: =4
+
